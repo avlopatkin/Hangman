@@ -6,7 +6,7 @@ import java.util.Random;
 
 public class WordList {
     private final List<String> words;
-    private Random random;
+    private final Random random;
 
     public WordList() {
         words = new ArrayList<>();
