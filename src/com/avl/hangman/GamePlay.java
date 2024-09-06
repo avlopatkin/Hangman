@@ -7,12 +7,13 @@ public class GamePlay implements Playable {
 
     private String word;
     private List<Character> currentWordState;
-    private int remainingAttempts;
     private final WordList wordList;
+    private final int REMAINING_ATTEMPTS = 6;
+    private int remainingAttempts;
 
     public GamePlay(WordList wordList) {
         this.wordList = wordList;
-        this.remainingAttempts = 6;
+        this.remainingAttempts = REMAINING_ATTEMPTS;
     }
 
     @Override
