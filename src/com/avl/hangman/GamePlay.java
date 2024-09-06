@@ -3,7 +3,7 @@ package com.avl.hangman;
 import java.util.ArrayList;
 import java.util.List;
 
-public class GamePlay implements GameplayInterface {
+public class GamePlay implements Playable {
 
     private String word;
     private List<Character> currentWordState;

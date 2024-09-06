@@ -7,7 +7,7 @@ public class Main {
 
         WordList wordList = new WordList();
         GamePlay game = new GamePlay(wordList);
-        GameController gameController = new GameController();
+        GameRunner gameController = new GameRunner();
 
         gameController.startGame();
         game.start();
