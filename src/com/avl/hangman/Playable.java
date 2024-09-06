@@ -1,6 +1,6 @@
 package com.avl.hangman;
 
-public interface GameplayInterface {
+public interface Playable {
 
     void start();
 
