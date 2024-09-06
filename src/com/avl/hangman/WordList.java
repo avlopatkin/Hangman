@@ -2,12 +2,15 @@ package com.avl.hangman;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class WordList {
     private final List<String> words;
+    private Random random;
 
     public WordList() {
         words = new ArrayList<>();
+        random = new Random();
         words.add("apple");
         words.add("orange");
         words.add("banana");
@@ -17,7 +20,7 @@ public class WordList {
     }
 
     public String getRandomWord() {
-        int randomIndex = (int) (Math.random() * words.size());
+        int randomIndex = random.nextInt(words.size());
         return words.get(randomIndex);
     }
 }
