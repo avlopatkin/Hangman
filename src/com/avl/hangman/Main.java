@@ -15,7 +15,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (gameController.isGameRunning()) {
-            System.out.println("Please enter a word: ");
+            System.out.println("Please enter a char: ");
             char guessedLetter = scanner.next().charAt(0);
             boolean isCorrect = game.guessLetter(guessedLetter);
 
