@@ -1,9 +1,9 @@
 package com.avl.hangman;
 
-public class GameController implements GameControllerInterface{
+public class GameRunner implements GameLifecycle {
     private boolean isRunning;
 
-    public GameController() {
+    public GameRunner() {
         this.isRunning = false;
     }
 
