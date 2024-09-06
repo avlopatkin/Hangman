@@ -1,11 +1,7 @@
 package com.avl.hangman;
 
 public class GameRunner implements GameLifecycle {
-    private boolean isRunning;
-
-    public GameRunner() {
-        this.isRunning = false;
-    }
+    private boolean isRunning = false;
 
     @Override
     public void startGame() {
